@@ -14,6 +14,7 @@
     
     /* Slideshow container */
     .slideshow-container {
+      padding-top: 0.8px;
       max-width: 1000px;
       position: relative;
       margin: auto;
@@ -72,7 +73,7 @@
     
     /* Flex container styling */
     .flex-container {
-      display: flex;
+      display: none; /* Hide flex container by default */
       flex-wrap: wrap;
       justify-content: space-around;
       margin-top: 20px;
@@ -85,7 +86,7 @@
       border-radius: 8px;
       margin: 10px;
       padding: 15px;
-      width: 30%;
+      width: 25%; /* Adjust this width as needed */
       text-align: center;
       transition: transform 0.3s ease;
     }
@@ -159,8 +160,9 @@
         Food is one of life's greatest pleasures, offering a sensory experience that delights 
         the taste buds, excites the senses, and brings people together.
       </pre>
-      <button>Find Your Foodie Fix</button>
+      <button id="findFoodieFix">Find Your Foodie Fix</button>
     </section>
+    </main>
     <section class="about" id="about">
       <h3>What We Offer</h3>
       <ul>
@@ -171,48 +173,61 @@
         <p>Tailored Dining Experiences</p>
         <p>Seasonal and Local Food Guides</p>
       </ul>
-    </section>
-    <section class="flex-container">
+    <section class="flex-container" id="flexContainer">
       <div class="flex-item">
         <img src="Biriyani.png" alt="Delicious Pasta">
-        <h4>Delicious Pasta</h4>
-        <p>Indulge in the rich flavors of our delicious pasta dishes, crafted with the finest ingredients and traditional recipes.</p>
+        <h4>Delicious Biriyani</h4>
+        <p>Rs.150</p>
+        <p>Discount: 10%off</p>
+        <p>Free delivery</p>
       </div>
       <div class="flex-item">
         <img src="hbiriyani.png" alt="Gourmet Burger">
-        <h4>Gourmet Burger</h4>
-        <p>Savor the juiciness of our gourmet burgers, made with premium ingredients and served with your choice of toppings.</p>
+        <h4>Delicious Hyderabadi Briyani</h4>
+        <p>Rs.200</p>
+        <p>Discount: 5%off</p>
+        <p>Free delivery</p>
       </div>
       <div class="flex-item">
         <img src="chicken.png" alt="Exotic Sushi">
-        <h4>Exotic Sushi</h4>
-        <p>Experience the freshness and delicacy of our exotic sushi rolls, prepared with the finest seafood and traditional techniques.</p>
+        <h4>Delicious Chicken Gravy</h4>
+        <p>Rs.170</p>
+        <p>Discount: 15%off</p>
+        <p>Cash on delivery</p>
       </div>
       <div class="flex-item">
         <img src="pizza.png" alt="Exotic Sushi">
-        <h4>Exotic Sushi</h4>
-        <p>Delight in the unique flavors of our exotic sushi creations, expertly crafted with premium ingredients and artistic presentation.</p>
+        <h4>Delicious Pizza</h4>
+        <p>Rs.300</p>
+        <p>Discount: 40%off</p>
+        <p>Free delivery</p>
       </div> 
        <div class="flex-item">
         <img src="pasta.png" alt="Exotic Sushi">
-        <h4>Exotic Sushi</h4>
-        <p>Embark on a culinary journey with our exotic sushi selections, featuring a fusion of flavors and textures that will mesmerize your palate.</p>
+        <h4>Delicious Pasta</h4>
+        <p>Rs.150</p>
+        <p>Discount: 10%off</p>
+        <p>Free delivery</p>
       </div>
       <div class="flex-item">
         <img src="burger.png" alt="Exotic Sushi">
-        <h4>Exotic Sushi</h4>
-        <p>Explore the diversity of flavors with our exotic sushi creations, expertly crafted to satisfy your cravings for unique and delicious cuisine.</p>
+        <h4>Delicious Burger</h4>
+        <p>Rs.100</p>
+        <p>Discount: 5%off  </p>
+        <p>Free delivery</p>
       </div>
     </section>
+  </section>  
     <section class="contact" id="contact">
-      <h3>Contact Us</h3>
-      <p>Email: contact@foodiesfav.com</p>
-      <p>Phone: +123 456 7890</p>
+      <h3> Contact Us:</h3>
+      <pre>  Email: contact@foodiesfav.com</pre>
+      <pre>  Phone: +9134567890</pre>
     </section>
   </main>
   <footer>
     <h4>&copy; FoodiesFav 2024</h4>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js">
+  </script>
 </body>
 </html>

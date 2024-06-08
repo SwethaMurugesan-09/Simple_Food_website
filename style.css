@@ -5,8 +5,8 @@ body {
 }
 
 header {
-  background-color: #fbeaea;
-  color: rgb(233, 47, 19);
+  background-color: #d33838;
+  color: rgb(245, 236, 235);
   padding: 1rem 0;
 }
 
@@ -58,12 +58,12 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(233, 47, 19);
+  color: rgb(248, 237, 235);
   font-size: 1rem;
 }
 
 nav ul li a:hover {
-  color: #dd4747;
+  color: #f9f7f7;
 }
 
 .hero {
@@ -103,7 +103,7 @@ pre {
 }
 
 button {
-  background-color: #dd4747;
+  background-color: #d33838;
   color: rgb(239, 252, 239);
   border: none;
   padding: 0.75rem 1.5rem;
@@ -124,7 +124,7 @@ button:hover {
 }
 
 footer {
-  background-color: #dd4747;
+  background-color: #d33838;
   text-align: center;
   padding: 1rem 0;
   font-size: 1.2rem;
@@ -144,7 +144,7 @@ footer {
   border-radius: 8px;
   margin: 10px;
   padding: 15px;
-  width: 30%;
+  width: 25%; /* Reduced the width from 30% to 25% */
   text-align: center;
   transition: transform 0.3s ease;
 }
