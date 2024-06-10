@@ -5,8 +5,7 @@ body {
 }
 
 header {
-  background-color: #d33838;
-  color: rgb(245, 236, 235);
+  color: #b71818;
   padding: 1rem 0;
 }
 
@@ -14,8 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
+  margin-left: 10%;
   padding: 0 1rem;
 }
 
@@ -27,7 +25,7 @@ header {
 
 .logo {
   max-height: 50px;
-  margin-right: 10px; /* Adjust this value as needed */
+  margin-right: 10px; 
 }
 
 .heading-container {
@@ -39,9 +37,34 @@ header {
   font-size: 1.5rem;
 }
 
+
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap:2px;
+  align-items: center; 
+  margin: 20px 0;
+}
+
+.hero-image img {
+  margin-top: 50px;
+  border-radius: 50%; 
+width: 400px;
+height: 400px; 
+object-fit: cover;}
+
+.hero-content {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+
 .nav-container {
   flex: 1;
   text-align: right;
+  margin-right: 10%;
 }
 
 nav ul {
@@ -58,18 +81,18 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(248, 237, 235);
+  color:#fe0101;
   font-size: 1rem;
 }
 
 nav ul li a:hover {
-  color: #f9f7f7;
+  color:#5c0303;
 }
 
 .hero {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #fff3e0;
+  background-color: #f7ecda;
 }
 
 .slideshow-container {
@@ -97,13 +120,13 @@ h2 {
   color: #333;
 }
 
-pre {
+p {
   font-size: 1.2rem;
   color: #524c4e;
 }
 
 button {
-  background-color: #d33838;
+  background-color: #993939;
   color: rgb(239, 252, 239);
   border: none;
   padding: 0.75rem 1.5rem;
@@ -114,7 +137,7 @@ button {
 }
 
 button:hover {
-  background-color: #fa3069;
+  background-color: #b71818;
 }
 
 .about {
@@ -124,11 +147,11 @@ button:hover {
 }
 
 footer {
-  background-color: #d33838;
+  background-color:#f7ecda;
   text-align: center;
   padding: 1rem 0;
   font-size: 1.2rem;
-  color: #f6ebee;
+  color: #000000;
 }
 
 .flex-container {
@@ -144,7 +167,7 @@ footer {
   border-radius: 8px;
   margin: 10px;
   padding: 15px;
-  width: 25%; /* Reduced the width from 30% to 25% */
+  width: 25%; 
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -163,4 +186,78 @@ footer {
 
 .flex-item:hover img {
   transform: scale(1.1);
+}
+
+
+
+.flex-container {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .nav-container nav ul {
+    display: none;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-container::before {
+    content: '\2630'; /* Hamburger menu icon */
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .hero-content {
+    padding: 20px 0;
+  }
+
+  .flex-container {
+    display: block;
+  }
+
+  .flex-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .nav-container::before {
+    top: 10px;
+    right: 10px;
+  }
+
+  .hero {
+    padding: 10px;
+  }
+
+  .hero-content {
+    padding: 10px 0;
+  }
+
+  .about, .contact {
+    padding: 10px;
+  }
 }
